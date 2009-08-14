@@ -60,20 +60,4 @@ package tfd.scala.yaml {
 		parse(yaml, text)
 	  }
   } 
-  
-  object Main {
-	  def main(args:Array[String]) {
-		  val input = YAMLParser.parse("""
-address:
-    first_name: Brian
-    last_name: Reece
-    email: brian@majordomo.com
-    company:
-        name: Five Apart, Ltd.
-        street_address: 8458 5th Street, San Francisco, CA 94107
-""").get.asInstanceOf[Map[String,Any]]
-         System.out.println(input("address"))
-	  }	  
-  }
-  
 }
